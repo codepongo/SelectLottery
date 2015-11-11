@@ -10,7 +10,7 @@
 
 @interface ResultViewController : UIViewController
 @property NSString* blueBall;
-@property NSString* redBalls;
+@property NSMutableArray* redBalls;
 @property IBOutlet UILabel* red;
 @property IBOutlet UILabel* blue;
 @end

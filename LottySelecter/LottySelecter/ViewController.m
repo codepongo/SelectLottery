@@ -20,30 +20,26 @@
     UIViewController *destination = segue.destinationViewController;
     if ([destination respondsToSelector:@selector(setResult:)])
     {
-        [destination setValue:self.result.text  forKey:@"result"];
+        [destination setValue:self.redBalls  forKey:@"result"];
     }
 }
 
 - (IBAction)select:(id)sender {
     UIButton* s = sender;
     //NSLog(@"%@", s.titleLabel.text);
-    self.countOfRedBalls += 1;
-    if (self.countOfRedBalls < 6) {
-        self.result.text = [NSString stringWithFormat:@"%@ %@",self.result.text, s.titleLabel.text];
-        
-    }
-    else {
-        self.result.text = [NSString stringWithFormat:@"%@ %@",self.result.text, s.titleLabel.text];
+    [self.redBalls addObject: [NSNumber numberWithInt:s.titleLabel.text.intValue ]];
+    self.result.text = [NSString stringWithFormat:@"%@ %@", self.result.text, s.titleLabel.text];
+
+    if (self.redBalls.count == 6) {
         [self performSegueWithIdentifier:@"blue" sender:self];
     }
     s.enabled = NO;
-    NSLog(@"%@", self.result.text);
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.redBalls = [NSMutableArray arrayWithCapacity:6];
     self.result.text = @"";
-    self.countOfRedBalls = 0;
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BlueViewController : UIViewController
-@property NSString* result;
+@property NSMutableArray* result;
 @property NSString* blue;
 
 @end

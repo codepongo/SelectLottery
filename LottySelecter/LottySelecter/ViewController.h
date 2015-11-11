@@ -11,7 +11,8 @@
 @interface ViewController : UIViewController
 
 -(IBAction)select:(id)sender;
-@property int countOfRedBalls;
+//@property int countOfRedBalls;
+@property NSMutableArray* redBalls;
 @property IBOutlet UILabel* result;
 @end
 
