@@ -33,6 +33,9 @@
     if (self.redBalls.count == 6) {
         [self performSegueWithIdentifier:@"blue" sender:self];
     }
+    else {
+        
+    }
     s.enabled = NO;
 }
 

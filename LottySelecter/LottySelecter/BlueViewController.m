@@ -23,9 +23,13 @@
 }
 
 - (IBAction)select:(id)sender {
+    if (self.blue != nil) {
+        return;
+    }
     UIButton* s = sender;
     self.blue = s.titleLabel.text;
-    [self performSegueWithIdentifier:@"result" sender:self];
 
+    [self performSegueWithIdentifier:@"result" sender:self];
+    
 }
 @end
