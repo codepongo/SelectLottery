@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA617A111BECE1FE00E4AFA6 /* LottySelecter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottySelecter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA617A111BECE1FE00E4AFA6 /* LotterySelector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotterySelector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA617A151BECE1FE00E4AFA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA617A171BECE1FE00E4AFA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA617A181BECE1FE00E4AFA6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		FA617A121BECE1FE00E4AFA6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA617A111BECE1FE00E4AFA6 /* LottySelecter.app */,
+				FA617A111BECE1FE00E4AFA6 /* LotterySelector.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,9 +92,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA617A101BECE1FE00E4AFA6 /* LottySelecter */ = {
+		FA617A101BECE1FE00E4AFA6 /* LotterySelector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA617A281BECE1FE00E4AFA6 /* Build configuration list for PBXNativeTarget "LottySelecter" */;
+			buildConfigurationList = FA617A281BECE1FE00E4AFA6 /* Build configuration list for PBXNativeTarget "LotterySelector" */;
 			buildPhases = (
 				FA617A0D1BECE1FE00E4AFA6 /* Sources */,
 				FA617A0E1BECE1FE00E4AFA6 /* Frameworks */,
@@ -104,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = LottySelecter;
+			name = LotterySelector;
 			productName = LottySelecter;
-			productReference = FA617A111BECE1FE00E4AFA6 /* LottySelecter.app */;
+			productReference = FA617A111BECE1FE00E4AFA6 /* LotterySelector.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -120,11 +120,11 @@
 				TargetAttributes = {
 					FA617A101BECE1FE00E4AFA6 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 7RT894X4HW;
+						DevelopmentTeam = R3CACB4GB3;
 					};
 				};
 			};
-			buildConfigurationList = FA617A0C1BECE1FE00E4AFA6 /* Build configuration list for PBXProject "LottySelecter" */;
+			buildConfigurationList = FA617A0C1BECE1FE00E4AFA6 /* Build configuration list for PBXProject "LotterySelector" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -137,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA617A101BECE1FE00E4AFA6 /* LottySelecter */,
+				FA617A101BECE1FE00E4AFA6 /* LotterySelector */,
 			);
 		};
 /* End PBXProject section */
@@ -274,11 +274,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LottySelecter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepongo.cnstockcalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepongo.test.LotterySelector;
+				PRODUCT_NAME = LotterySelector;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -287,11 +288,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LottySelecter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepongo.cnstockcalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepongo.test.LotterySelector;
+				PRODUCT_NAME = LotterySelector;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -299,7 +301,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA617A0C1BECE1FE00E4AFA6 /* Build configuration list for PBXProject "LottySelecter" */ = {
+		FA617A0C1BECE1FE00E4AFA6 /* Build configuration list for PBXProject "LotterySelector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA617A261BECE1FE00E4AFA6 /* Debug */,
@@ -308,7 +310,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA617A281BECE1FE00E4AFA6 /* Build configuration list for PBXNativeTarget "LottySelecter" */ = {
+		FA617A281BECE1FE00E4AFA6 /* Build configuration list for PBXNativeTarget "LotterySelector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA617A291BECE1FE00E4AFA6 /* Debug */,
